@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maximov Bookkeeping</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="row">
+        <nav>
+          <div class="img_wrapper">
+            <figure>
+              <img src="./assets/header_logo.png" alt="logo">
+            </figure>
+          </div>
+          <ul>
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="#services">Services</a>
+            </li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+ </header>
+
+  <section id="home">
+    <div>
+      <h1>Maximov Bookkeeping</h1>
+     <p>Monthly Bookkeeping Services using Quickbooks. I provide accurate and timely bookkeeping solutions for your business, so you can stop dreading tax season.</p>
+    </div>
+    <figure>
+      <img src="./assets/header_img.jpg" alt="header image">
+    </figure>
+  </section>
+
+  <section id="services">
+    <h2>Services</h2>
+    <div class="services_grid">
+      <div class="services_card">
+        <h3>Monthly Bookkeeping</h3>
+        <p>Quick and accurate bookkeeping services for your small business.</p>
+      </div>
+      <div class="services_card">
+        <h3>Income and Expense Sorting.</h3>
+        <p>Helping you organize and categorize your financial transactions.</p>
+      </div>
+      <div class="services_card">
+        <h3>Organized Records</h3>
+        <p>Keeping your financial records well-organized and easily accessible.</p>
+      </div>
+      <div class="services_card">
+        <h3>Tax-time Prep</h3>
+        <p>Preparing your financial records for tax season.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About</h2>
+    <div class="about_wrapper">
+      <p>My name is Julia Maximov, and I am a bookkeeper with a passion for helping small businesses thrive. I understand the challenges that business owners face when it comes to managing their finances.</p>
+      <p>I'm currently working toward my  QuickBooks ProAdvisor certificate and my goal is to provide accurate and timely bookkeeping that lets you focus on what you do best: running your business.</p>
+      <h3>Why work with me?</h3>
+      <ul>
+        <li>QuickBooks ProAdvisor certification in progress</li>
+        <li>Studying finance at SNHU</li>
+        <li>Serving small businesses in Vermont</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <form class="contact_form" action="https://formspree.io/f/xaeezlde" method="POST">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">How can I help?</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+    <script src="index.js"></script>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="footer_img-wrapper">
+          <img src="./assets/footer_logo.png" class="footer_logo"alt="footer_logo">
+        </div>
+        <div class="footer_links">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer_copy">&copy; 2026 Maximov Bookkeeping. All rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
