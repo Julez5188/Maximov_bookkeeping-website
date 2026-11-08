@@ -179,16 +179,43 @@ section h2 {
 
 /* Contact Section */
 
+#contact {
+  background: transparent;
+  backdrop-filter: none;
+  border: none;
+  box-shadow: none;
+  padding: 60px 20px;
+}
+
 .contact_form {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 8px; 
+  background: rgba(255, 255, 255, 0.85);
+  padding: 32px;
+  margin: 24px auto 0;
+  max-width: 600px;
+  border-radius: 12px;
+  border: 1px solid rgba(224, 165, 38, 0.35);
+  box-shadow: 0 6px 18px rgba(31, 58, 95, 0.12);
+  box-sizing: border-box;
 }
 
-.contact_ form label {
+.contact_form label {
   color: #1f3a5f;
   font-weight: bold;
   margin-top: 12px;
+}
+
+#contact h2 {
+  display: block;
+  text-align: center;
+}
+
+.contact_form input,
+.contact_form textarea {
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .contact_form input:focus,
@@ -265,10 +292,81 @@ footer .row {
   margin-top: 24px;
 }
 
+.work_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+  gap: 20px;
+  margin: 24px 0;
+}
+
+.work_grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid #e0a526;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.work_links {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.work_links a {
+  background: #1f3a5f;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.work_links a:hover {
+  background: #e0a526;
+  color: #1f3a5f;
+}
+
 /* Mobile Responsiveness */
 
 @media (max-width: 700px) {
   .services_grid {
     grid-template-columns: 1fr;
   }
+}
+
+@media (max-width) {
+  footer .row {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .footer_links ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+}
+
+body {
+   background-color: #f4f7fb;
+    background-image: 
+      radial-gradient(circle at 8% 0%, rgba(224, 165, 38, 0.20), transparent 40%),
+     radial-gradient(circle at 95% 25%, rgba(31, 58, 95, 0.16), transparent 45%),
+      radial-gradient(circle at 50% 100%, rgba(224, 165, 38, 0.14), transparent 40%),
+      radial-gradient(rgba(31, 58, 95, 0.09) 1px, transparent 1px);
+  background-size: auto, auto, auto, 24px 24px;
+  background-repeat: no-repeat, no-repeat, no-repeat, repeat;
+}
+
+section {
+  background: transparent;
+}
+
+#services {
+  background: rgba(225, 225, 225, 0.55);
+  backdrop-filter: blur(6px);
+  border-top: 1px solid rgba(224, 165, 38, 0.35);
+  border-bottom: 1px solid rgba(224, 165, 38, 0.35);
 }
